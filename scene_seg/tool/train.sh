@@ -12,7 +12,7 @@ mkdir -p ${model_dir}
 now=$(date +"%Y%m%d_%H%M%S")
 cp tool/train.sh tool/train.py ${config} ${exp_dir}
 
-$PYTHON tool/train.py --config=${config} 2>&1 | tee ${model_dir}/train-$now.log
+CUDA_VISIBLE_DEVICES=1 $PYTHON tool/train.py --config=${config} 2>&1 | tee ${model_dir}/train-$now.log
 
 
 if [ ${dataset} = 's3dis' ]

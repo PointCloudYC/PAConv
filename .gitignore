@@ -143,3 +143,14 @@ lib/**/*.ninja*
 dataset/
 *.DS_Store
 .vscode/
+
+# custom ops
+scene_seg/lib/paconv_lib/src/gpu/.ninja_deps
+scene_seg/lib/paconv_lib/src/gpu/*.o
+scene_seg/lib/paconv_lib/src/gpu/.ninja_log
+scene_seg/lib/paconv_lib/src/gpu/build.ninja
+scene_seg/lib/pointops/src/*.cuda.*
+scene_seg/lib/pointops/src/*.o
+scene_seg/lib/pointops/src/*_log
+scene_seg/lib/pointops/src/build.ninja
+scene_seg/lib/pointops/src/.ninja_deps
